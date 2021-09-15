@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE >
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RST分析平台</title>
+        <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/css.css' %}"/>
+    </head>
+    <body>
+        <div class="BCNbj">
+            <div class="head">
+                <div class=" logo-text">
+                    <p class=" ts">RST分析平台</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-xs-3 ">
+            <div id="tree">
+            </div>
+        </div>
+
+
+
+                <div class="col-xs-6 ">
+                    <form method="post" enctype="multipart/form-data"  align="center">
+                        {% csrf_token %}
+                        {{ form }}
+        <h2><input align="center"  type="submit" value="提交"/></h2>
+    </form>
+
+        </div>
+
+
+            <div class="col-xs-3 ">
+            </div>
+        </div>
+
+
+    </body>
+</html>
+
